@@ -9,6 +9,41 @@ package com.quchen.spacecowboy;
 
 public final class R {
     public static final class attr {
+        /** 
+    The size of the ad. It must be one of BANNER, FULL_BANNER, LEADERBOARD,
+    MEDIUM_RECTANGLE, SMART_BANNER, WIDE_SKYSCRAPER, or
+    &lt;width&gt;x&lt;height&gt;.
+    
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int adSize=0x7f010000;
+        /** 
+    A comma-separated list of the supported ad sizes. The sizes must be one of
+    BANNER, FULL_BANNER, LEADERBOARD, MEDIUM_RECTANGLE, SMART_BANNER,
+    WIDE_SKYSCRAPER, or &lt;width&gt;x&lt;height&gt;.
+    
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int adSizes=0x7f010001;
+        /**  The ad unit ID. 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int adUnitId=0x7f010002;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -16,7 +51,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraBearing=0x7f010001;
+        public static final int cameraBearing=0x7f010004;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -24,7 +59,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTargetLat=0x7f010002;
+        public static final int cameraTargetLat=0x7f010005;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -32,7 +67,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTargetLng=0x7f010003;
+        public static final int cameraTargetLng=0x7f010006;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -40,7 +75,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTilt=0x7f010004;
+        public static final int cameraTilt=0x7f010007;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -48,7 +83,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraZoom=0x7f010005;
+        public static final int cameraZoom=0x7f010008;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -62,7 +97,7 @@ containing a value of this type.
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
          */
-        public static final int mapType=0x7f010000;
+        public static final int mapType=0x7f010003;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -70,7 +105,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiCompass=0x7f010006;
+        public static final int uiCompass=0x7f010009;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -78,7 +113,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiRotateGestures=0x7f010007;
+        public static final int uiRotateGestures=0x7f01000a;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -86,7 +121,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiScrollGestures=0x7f010008;
+        public static final int uiScrollGestures=0x7f01000b;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -94,7 +129,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiTiltGestures=0x7f010009;
+        public static final int uiTiltGestures=0x7f01000c;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -102,7 +137,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiZoomControls=0x7f01000a;
+        public static final int uiZoomControls=0x7f01000d;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -110,7 +145,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiZoomGestures=0x7f01000b;
+        public static final int uiZoomGestures=0x7f01000e;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -118,7 +153,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int useViewLifecycle=0x7f01000c;
+        public static final int useViewLifecycle=0x7f01000f;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -126,7 +161,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int zOrderOnTop=0x7f01000d;
+        public static final int zOrderOnTop=0x7f010010;
     }
     public static final class color {
         public static final int common_action_bar_splitter=0x7f050009;
@@ -205,46 +240,50 @@ containing a value of this type.
         public static final int highscore_hdpi=0x7f020039;
         public static final int ic_action_search=0x7f02003a;
         public static final int ic_launcher=0x7f02003b;
-        public static final int menu=0x7f02003c;
-        public static final int menu_hdpi=0x7f02003d;
-        public static final int milk=0x7f02003e;
-        public static final int milk_hdpi=0x7f02003f;
-        public static final int nitrokaese=0x7f020040;
-        public static final int nitrokaese_hdpi=0x7f020041;
-        public static final int old_cow=0x7f020042;
-        public static final int old_cow_hdpi=0x7f020043;
-        public static final int play_button=0x7f020044;
-        public static final int play_button_hdpi=0x7f020045;
-        public static final int rock1=0x7f020046;
-        public static final int rock1_hdpi=0x7f020047;
-        public static final int rock_single=0x7f020048;
-        public static final int rock_single_hdpi=0x7f020049;
-        public static final int rocket=0x7f02004a;
-        public static final int rocket_hdpi=0x7f02004b;
-        public static final int shield=0x7f02004c;
-        public static final int shield_hdpi=0x7f02004d;
-        public static final int shop=0x7f02004e;
-        public static final int shop_better_rocket=0x7f02004f;
-        public static final int shop_better_rocket_hdpi=0x7f020050;
-        public static final int shop_coin_magnet=0x7f020051;
-        public static final int shop_coin_magnet_hdpi=0x7f020052;
-        public static final int shop_cow_magnet=0x7f020053;
-        public static final int shop_cow_magnet_hdpi=0x7f020054;
-        public static final int shop_explosion_attack=0x7f020055;
-        public static final int shop_explosion_attack_hdpi=0x7f020056;
-        public static final int shop_guided_rock_protection=0x7f020057;
-        public static final int shop_guided_rock_protection_hdpi=0x7f020058;
-        public static final int shop_hdpi=0x7f020059;
-        public static final int shop_more_start_milk=0x7f02005a;
-        public static final int shop_more_start_milk_hdpi=0x7f02005b;
-        public static final int shop_status_effect_reduction=0x7f02005c;
-        public static final int shop_status_effect_reduction_hdpi=0x7f02005d;
-        public static final int status=0x7f02005e;
-        public static final int status_hdpi=0x7f02005f;
-        public static final int tilt=0x7f020060;
-        public static final int tilt_hdpi=0x7f020061;
-        public static final int zombie_cow=0x7f020062;
-        public static final int zombie_cow_hdpi=0x7f020063;
+        public static final int ic_plusone_medium_off_client=0x7f02003c;
+        public static final int ic_plusone_small_off_client=0x7f02003d;
+        public static final int ic_plusone_standard_off_client=0x7f02003e;
+        public static final int ic_plusone_tall_off_client=0x7f02003f;
+        public static final int menu=0x7f020040;
+        public static final int menu_hdpi=0x7f020041;
+        public static final int milk=0x7f020042;
+        public static final int milk_hdpi=0x7f020043;
+        public static final int nitrokaese=0x7f020044;
+        public static final int nitrokaese_hdpi=0x7f020045;
+        public static final int old_cow=0x7f020046;
+        public static final int old_cow_hdpi=0x7f020047;
+        public static final int play_button=0x7f020048;
+        public static final int play_button_hdpi=0x7f020049;
+        public static final int rock1=0x7f02004a;
+        public static final int rock1_hdpi=0x7f02004b;
+        public static final int rock_single=0x7f02004c;
+        public static final int rock_single_hdpi=0x7f02004d;
+        public static final int rocket=0x7f02004e;
+        public static final int rocket_hdpi=0x7f02004f;
+        public static final int shield=0x7f020050;
+        public static final int shield_hdpi=0x7f020051;
+        public static final int shop=0x7f020052;
+        public static final int shop_better_rocket=0x7f020053;
+        public static final int shop_better_rocket_hdpi=0x7f020054;
+        public static final int shop_coin_magnet=0x7f020055;
+        public static final int shop_coin_magnet_hdpi=0x7f020056;
+        public static final int shop_cow_magnet=0x7f020057;
+        public static final int shop_cow_magnet_hdpi=0x7f020058;
+        public static final int shop_explosion_attack=0x7f020059;
+        public static final int shop_explosion_attack_hdpi=0x7f02005a;
+        public static final int shop_guided_rock_protection=0x7f02005b;
+        public static final int shop_guided_rock_protection_hdpi=0x7f02005c;
+        public static final int shop_hdpi=0x7f02005d;
+        public static final int shop_more_start_milk=0x7f02005e;
+        public static final int shop_more_start_milk_hdpi=0x7f02005f;
+        public static final int shop_status_effect_reduction=0x7f020060;
+        public static final int shop_status_effect_reduction_hdpi=0x7f020061;
+        public static final int status=0x7f020062;
+        public static final int status_hdpi=0x7f020063;
+        public static final int tilt=0x7f020064;
+        public static final int tilt_hdpi=0x7f020065;
+        public static final int zombie_cow=0x7f020066;
+        public static final int zombie_cow_hdpi=0x7f020067;
     }
     public static final class id {
         public static final int ScrollViewHelp=0x7f060036;
@@ -357,6 +396,9 @@ containing a value of this type.
         public static final int tvSound=0x7f060026;
         public static final int version=0x7f06000c;
     }
+    public static final class integer {
+        public static final int google_play_services_version=0x7f080000;
+    }
     public static final class layout {
         public static final int about=0x7f030000;
         public static final int activity_main=0x7f030001;
@@ -377,67 +419,67 @@ containing a value of this type.
         public static final int theme=0x7f040004;
     }
     public static final class string {
-        public static final int ToastFlash=0x7f07005e;
-        public static final int ToastFrost=0x7f07005d;
-        public static final int ToastMeteorShower=0x7f070059;
-        public static final int ToastNitroOff=0x7f07005c;
-        public static final int ToastNitroOn=0x7f07005b;
-        public static final int ToastPoison=0x7f07005f;
-        public static final int ToastSensorCalibration=0x7f07005a;
-        public static final int ToastShield=0x7f070060;
-        public static final int about=0x7f070045;
-        public static final int achievement_catch_dancecow_frozen=0x7f070027;
-        public static final int achievement_catch_them_all=0x7f07002f;
-        public static final int achievement_cows_100=0x7f07001b;
-        public static final int achievement_cows_1000=0x7f07001c;
-        public static final int achievement_cows_200_run=0x7f07001e;
-        public static final int achievement_cows_75_run=0x7f07001d;
-        public static final int achievement_full_milk_2_minutes=0x7f07002a;
-        public static final int achievement_heal_poison=0x7f070028;
-        public static final int achievement_leet_king=0x7f07002e;
-        public static final int achievement_low_milk_1_minutes=0x7f070029;
-        public static final int achievement_lvl_10_with_10_milkcontainer=0x7f07002c;
-        public static final int achievement_meteoroids_100=0x7f07001f;
-        public static final int achievement_meteoroids_1000=0x7f070020;
-        public static final int achievement_meteoroids_200_run=0x7f070022;
-        public static final int achievement_meteoroids_50_run=0x7f070021;
-        public static final int achievement_meteoroids_with_shield_10=0x7f07002b;
-        public static final int achievement_milkcontainer_100=0x7f070025;
-        public static final int achievement_powerups_100=0x7f070023;
-        public static final int achievement_powerups_30_run=0x7f070024;
-        public static final int achievement_red_coin=0x7f07002d;
-        public static final int achievement_sleepy_cowboy=0x7f070026;
-        public static final int achievement_survived_15=0x7f070018;
-        public static final int achievement_survived_5=0x7f070017;
-        public static final int achievement_undamaged_1=0x7f070019;
-        public static final int achievement_undamaged_5=0x7f07001a;
-        public static final int app_id=0x7f070015;
-        public static final int app_name=0x7f070030;
+        public static final int ToastFlash=0x7f070063;
+        public static final int ToastFrost=0x7f070062;
+        public static final int ToastMeteorShower=0x7f07005e;
+        public static final int ToastNitroOff=0x7f070061;
+        public static final int ToastNitroOn=0x7f070060;
+        public static final int ToastPoison=0x7f070064;
+        public static final int ToastSensorCalibration=0x7f07005f;
+        public static final int ToastShield=0x7f070065;
+        public static final int about=0x7f07004a;
+        public static final int achievement_catch_dancecow_frozen=0x7f07002c;
+        public static final int achievement_catch_them_all=0x7f070034;
+        public static final int achievement_cows_100=0x7f070020;
+        public static final int achievement_cows_1000=0x7f070021;
+        public static final int achievement_cows_200_run=0x7f070023;
+        public static final int achievement_cows_75_run=0x7f070022;
+        public static final int achievement_full_milk_2_minutes=0x7f07002f;
+        public static final int achievement_heal_poison=0x7f07002d;
+        public static final int achievement_leet_king=0x7f070033;
+        public static final int achievement_low_milk_1_minutes=0x7f07002e;
+        public static final int achievement_lvl_10_with_10_milkcontainer=0x7f070031;
+        public static final int achievement_meteoroids_100=0x7f070024;
+        public static final int achievement_meteoroids_1000=0x7f070025;
+        public static final int achievement_meteoroids_200_run=0x7f070027;
+        public static final int achievement_meteoroids_50_run=0x7f070026;
+        public static final int achievement_meteoroids_with_shield_10=0x7f070030;
+        public static final int achievement_milkcontainer_100=0x7f07002a;
+        public static final int achievement_powerups_100=0x7f070028;
+        public static final int achievement_powerups_30_run=0x7f070029;
+        public static final int achievement_red_coin=0x7f070032;
+        public static final int achievement_sleepy_cowboy=0x7f07002b;
+        public static final int achievement_survived_15=0x7f07001d;
+        public static final int achievement_survived_5=0x7f07001c;
+        public static final int achievement_undamaged_1=0x7f07001e;
+        public static final int achievement_undamaged_5=0x7f07001f;
+        public static final int app_id=0x7f07001a;
+        public static final int app_name=0x7f070035;
         /**   Title for notification shown when GooglePlayServices needs to be
         enabled for a application to work. [CHAR LIMIT=70] 
          */
-        public static final int auth_client_needs_enabling_title=0x7f070010;
+        public static final int auth_client_needs_enabling_title=0x7f070015;
         /**   Title for notification shown when GooglePlayServices needs to be
         installed for a application to work. [CHAR LIMIT=70] 
          */
-        public static final int auth_client_needs_installation_title=0x7f070011;
+        public static final int auth_client_needs_installation_title=0x7f070016;
         /**   Title for notification shown when GooglePlayServices needs to be
         udpated for a application to work. [CHAR LIMIT=70] 
          */
-        public static final int auth_client_needs_update_title=0x7f070012;
+        public static final int auth_client_needs_update_title=0x7f070017;
         /**   Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=42] 
          */
-        public static final int auth_client_play_services_err_notification_msg=0x7f070013;
+        public static final int auth_client_play_services_err_notification_msg=0x7f070018;
         /**   Requested by string saying which app requested the notification. [CHAR LIMIT=42] 
          */
-        public static final int auth_client_requested_by_msg=0x7f070014;
+        public static final int auth_client_requested_by_msg=0x7f070019;
         /**   Title for notification shown when a bad version of GooglePlayServices
         has been installed and needs correction for an application to work.
         [CHAR LIMIT=70] 
          */
-        public static final int auth_client_using_bad_version_title=0x7f07000f;
-        public static final int back_button=0x7f070033;
-        public static final int bestScoreText=0x7f070069;
+        public static final int auth_client_using_bad_version_title=0x7f070014;
+        public static final int back_button=0x7f070038;
+        public static final int bestScoreText=0x7f07006e;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
@@ -466,19 +508,35 @@ containing a value of this type.
         Google Play services (from Play Store) [CHAR LIMIT=40] 
          */
         public static final int common_google_play_services_install_title=0x7f070000;
+        /**  Message in confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=NONE] 
+         */
+        public static final int common_google_play_services_invalid_account_text=0x7f07000c;
+        /**  Title of confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=40] 
+         */
+        public static final int common_google_play_services_invalid_account_title=0x7f07000b;
+        /**  Message in confirmation dialog informing the user that a network error occurred. [CHAR LIMIT=NONE] 
+         */
+        public static final int common_google_play_services_network_error_text=0x7f07000a;
+        /**  Title of confirmation dialog informing the user that a network error occurred. [CHAR LIMIT=40] 
+         */
+        public static final int common_google_play_services_network_error_title=0x7f070009;
         /**  Message in confirmation dialog informing user there is an unknown issue in Google Play
         services [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_unknown_issue=0x7f070009;
+        public static final int common_google_play_services_unknown_issue=0x7f07000d;
+        /**  Message in confirmation dialog informing user that date on the device is not correct,
+    causing certificate checks to fail. [CHAR LIMIT=NONE] 
+         */
+        public static final int common_google_play_services_unsupported_date_text=0x7f070010;
         /**  Message in confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_unsupported_text=0x7f07000b;
+        public static final int common_google_play_services_unsupported_text=0x7f07000f;
         /**  Title of confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_unsupported_title=0x7f07000a;
+        public static final int common_google_play_services_unsupported_title=0x7f07000e;
         /**  Button in confirmation dialog for updating Google Play services [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_update_button=0x7f07000c;
+        public static final int common_google_play_services_update_button=0x7f070011;
         /**  Message in confirmation dialog informing user that they need to update
         Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
@@ -489,63 +547,138 @@ containing a value of this type.
         public static final int common_google_play_services_update_title=0x7f070007;
         /**  Sign-in button text [CHAR LIMIT=15] 
          */
-        public static final int common_signin_button_text=0x7f07000d;
+        public static final int common_signin_button_text=0x7f070012;
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
-        public static final int common_signin_button_text_long=0x7f07000e;
-        public static final int config_music_volume=0x7f07003b;
-        public static final int config_sound_volume=0x7f07003c;
-        public static final int developer=0x7f07003e;
-        public static final int graphics=0x7f07003f;
-        public static final int help0=0x7f070035;
-        public static final int help1=0x7f070036;
-        public static final int help2=0x7f070037;
-        public static final int help3=0x7f070038;
-        public static final int help4=0x7f070039;
-        public static final int ingamemenu=0x7f070041;
-        public static final int ingamemenuSettingsButton=0x7f070042;
-        public static final int leaderboard_space_cowboy=0x7f070016;
-        public static final int moreHelp=0x7f070048;
-        public static final int moreHelpBell=0x7f070057;
-        public static final int moreHelpCoin=0x7f070058;
-        public static final int moreHelpControl=0x7f070049;
-        public static final int moreHelpCow=0x7f07004f;
-        public static final int moreHelpCowDance=0x7f070052;
-        public static final int moreHelpCowFat=0x7f070053;
-        public static final int moreHelpCowGhost=0x7f070051;
-        public static final int moreHelpCowOld=0x7f070050;
-        public static final int moreHelpCowZombie=0x7f070054;
-        public static final int moreHelpMilkContainer=0x7f070055;
-        public static final int moreHelpNitroCheese=0x7f070056;
-        public static final int moreHelpRock=0x7f07004a;
-        public static final int moreHelpRockFat=0x7f07004e;
-        public static final int moreHelpRockFlash=0x7f07004c;
-        public static final int moreHelpRockFrozen=0x7f07004b;
-        public static final int moreHelpRockGuided=0x7f07004d;
-        public static final int music=0x7f070040;
-        public static final int no=0x7f070044;
-        public static final int reset_highscore=0x7f07003d;
-        public static final int score_textview=0x7f07003a;
-        public static final int sensor_button=0x7f070034;
-        public static final int shopBetterRocket=0x7f070061;
-        public static final int shopCoinMagnet=0x7f070063;
-        public static final int shopCowMagnet=0x7f070064;
-        public static final int shopExplosionAttack=0x7f070067;
-        public static final int shopFullUpgraded=0x7f070068;
-        public static final int shopGuidedRockProtection=0x7f070065;
-        public static final int shopMoreStartMilk=0x7f070062;
-        public static final int shopStatusEffectReduction=0x7f070066;
-        public static final int sign_in_button_help_text=0x7f070047;
-        public static final int title=0x7f070031;
-        public static final int title_activity_main=0x7f070032;
-        public static final int yes=0x7f070043;
-        public static final int yourScoreIs=0x7f070046;
+        public static final int common_signin_button_text_long=0x7f070013;
+        public static final int config_music_volume=0x7f070040;
+        public static final int config_sound_volume=0x7f070041;
+        public static final int developer=0x7f070043;
+        public static final int graphics=0x7f070044;
+        public static final int help0=0x7f07003a;
+        public static final int help1=0x7f07003b;
+        public static final int help2=0x7f07003c;
+        public static final int help3=0x7f07003d;
+        public static final int help4=0x7f07003e;
+        public static final int ingamemenu=0x7f070046;
+        public static final int ingamemenuSettingsButton=0x7f070047;
+        public static final int leaderboard_space_cowboy=0x7f07001b;
+        public static final int moreHelp=0x7f07004d;
+        public static final int moreHelpBell=0x7f07005c;
+        public static final int moreHelpCoin=0x7f07005d;
+        public static final int moreHelpControl=0x7f07004e;
+        public static final int moreHelpCow=0x7f070054;
+        public static final int moreHelpCowDance=0x7f070057;
+        public static final int moreHelpCowFat=0x7f070058;
+        public static final int moreHelpCowGhost=0x7f070056;
+        public static final int moreHelpCowOld=0x7f070055;
+        public static final int moreHelpCowZombie=0x7f070059;
+        public static final int moreHelpMilkContainer=0x7f07005a;
+        public static final int moreHelpNitroCheese=0x7f07005b;
+        public static final int moreHelpRock=0x7f07004f;
+        public static final int moreHelpRockFat=0x7f070053;
+        public static final int moreHelpRockFlash=0x7f070051;
+        public static final int moreHelpRockFrozen=0x7f070050;
+        public static final int moreHelpRockGuided=0x7f070052;
+        public static final int music=0x7f070045;
+        public static final int no=0x7f070049;
+        public static final int reset_highscore=0x7f070042;
+        public static final int score_textview=0x7f07003f;
+        public static final int sensor_button=0x7f070039;
+        public static final int shopBetterRocket=0x7f070066;
+        public static final int shopCoinMagnet=0x7f070068;
+        public static final int shopCowMagnet=0x7f070069;
+        public static final int shopExplosionAttack=0x7f07006c;
+        public static final int shopFullUpgraded=0x7f07006d;
+        public static final int shopGuidedRockProtection=0x7f07006a;
+        public static final int shopMoreStartMilk=0x7f070067;
+        public static final int shopStatusEffectReduction=0x7f07006b;
+        public static final int sign_in_button_help_text=0x7f07004c;
+        public static final int title=0x7f070036;
+        public static final int title_activity_main=0x7f070037;
+        public static final int yes=0x7f070048;
+        public static final int yourScoreIs=0x7f07004b;
     }
     public static final class style {
-        public static final int AppTheme=0x7f080000;
-        public static final int Theme_Transparent=0x7f080001;
+        public static final int AppTheme=0x7f090000;
+        public static final int Theme_Transparent=0x7f090001;
     }
     public static final class styleable {
+        /** Attributes that can be used with a AdsAttrs.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #AdsAttrs_adSize com.quchen.spacecowboy:adSize}</code></td><td>
+    The size of the ad.</td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSizes com.quchen.spacecowboy:adSizes}</code></td><td>
+    A comma-separated list of the supported ad sizes.</td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId com.quchen.spacecowboy:adUnitId}</code></td><td> The ad unit ID.</td></tr>
+           </table>
+           @see #AdsAttrs_adSize
+           @see #AdsAttrs_adSizes
+           @see #AdsAttrs_adUnitId
+         */
+        public static final int[] AdsAttrs = {
+            0x7f010000, 0x7f010001, 0x7f010002
+        };
+        /**
+          <p>
+          @attr description
+          
+    The size of the ad. It must be one of BANNER, FULL_BANNER, LEADERBOARD,
+    MEDIUM_RECTANGLE, SMART_BANNER, WIDE_SKYSCRAPER, or
+    &lt;width&gt;x&lt;height&gt;.
+    
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.quchen.spacecowboy:adSize
+        */
+        public static final int AdsAttrs_adSize = 0;
+        /**
+          <p>
+          @attr description
+          
+    A comma-separated list of the supported ad sizes. The sizes must be one of
+    BANNER, FULL_BANNER, LEADERBOARD, MEDIUM_RECTANGLE, SMART_BANNER,
+    WIDE_SKYSCRAPER, or &lt;width&gt;x&lt;height&gt;.
+    
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.quchen.spacecowboy:adSizes
+        */
+        public static final int AdsAttrs_adSizes = 1;
+        /**
+          <p>
+          @attr description
+           The ad unit ID. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.quchen.spacecowboy:adUnitId
+        */
+        public static final int AdsAttrs_adUnitId = 2;
         /** Attributes that can be used with a MapAttrs.
            <p>Includes the following attributes:</p>
            <table>
@@ -583,10 +716,10 @@ containing a value of this type.
            @see #MapAttrs_zOrderOnTop
          */
         public static final int[] MapAttrs = {
-            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
-            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
-            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b,
-            0x7f01000c, 0x7f01000d
+            0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006,
+            0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a,
+            0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e,
+            0x7f01000f, 0x7f010010
         };
         /**
           <p>This symbol is the offset where the {@link com.quchen.spacecowboy.R.attr#cameraBearing}
